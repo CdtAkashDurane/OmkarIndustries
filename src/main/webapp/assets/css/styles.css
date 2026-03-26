@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* 1. VARIABLES & RESET */
+:root {
+    --primary: #FF5F15;
+    --secondary: #FF7F00;
+    --accent: #FFA500;
+    --dark: #1a2a44; /* Matched to your logo's deep blue */
+    --light: #f4f4f4;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    background: var(--light); 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. NAVIGATION (The Mega Logo Header) */
+nav {
+    background: var(--dark);
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; 
+    position: sticky; /* Keeps it at the top while scrolling */
+    top: 0;
+    border-bottom: 6px solid var(--primary);
+    overflow: visible !important; /* CRITICAL: Allows hexagonal logo to hang down */
+    z-index: 1000;
+}
+
+.logo-container {
+    position: relative;
+    width: 250px; /* Space for the large logo */
+    z-index: 1001;
+}
+
+.logo-img {
+    height: 180px; /* MEGA SIZE */
+    width: auto;
+    position: absolute;
+    top: -30px; /* Aligns the hexagon vertically */
+    left: 0;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.6));
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Admin Button Specific Styling */
+.admin-btn {
+	transition: all 0.3s ease;
+    border: 2px solid var(--primary);
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+.admin-btn:hover {
+    background: var(--primary);
+    color: var(--white) !important;
+}
+
+/* 3. HERO SECTION */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('../images/tyre-bg.png'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    animation: backgroundMove 20s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    from { background-position: bottom; }
+    to { background-position: top; }
+}
+
+/* Spacer for index.jsp to prevent logo from overlapping Hero text */
+.header-spacer {
+    height: 100px;
+    background: transparent;
+}
+
+/* 4. PRODUCT CARDS */
+.product-card {
+    background: var(--white);
+    border-bottom: 5px solid var(--primary);
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.img-container {
+    height: 200px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .img-container img {
+    transform: scale(1.1);
+}
+
+.product-card .content {
+    padding: 20px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: var(--dark);
+}
+
+.product-card p {
+    color: #666;
+    font-size: 0.95rem;
+    height: 4.5em; /* Exactly 3 lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+}
+
+/* 5. BUTTONS & UI */
+.btn-main {
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-main:hover { 
+    background: var(--secondary); 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 6. RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .logo-container {
+        width: auto;
+        margin-bottom: 60px; /* Space for the overlapping logo */
+    }
+    
+    .logo-img {
+        height: 120px;
+        position: static; /* Let it sit normally on mobile */
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+}
