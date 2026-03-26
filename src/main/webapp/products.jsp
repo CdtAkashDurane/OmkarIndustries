@@ -3,7 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Our Product Range | Bestpatch</title>
+    <title>Our Product Range | Omkar Industry</title>
     <style>
         .product-card { background: white; border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
@@ -141,7 +141,7 @@
     </div>
 
     <footer style="background: #111; color: white; padding: 40px 10%; text-align: center; margin-top: 50px;">
-        <p>&copy; 2026 Bestpatch Tyre & Tube Repairs. All Rights Reserved.</p>
+        <p>&copy; 2026 OmkarIndustries Tyre & Tube Repairs. All Rights Reserved.</p>
     </footer>
 
 </body>

@@ -34,12 +34,19 @@
 <body>
 
     <nav class="nav-admin">
-        <span style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">OMKAR ADMIN</span>
-        <div>
-            <a href="manage-products.jsp" style="color: #FF7F00; margin-right: 20px; text-decoration: none; font-weight: bold;"><i class="fas fa-edit"></i> Manage Products</a>
-            <a href="LogoutServlet" style="color: #ff4444; text-decoration: none; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Logout</a>
-        </div>
-    </nav>
+    <span style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">OMKAR ADMIN</span>
+    <div>
+        <a href="${pageContext.request.contextPath}/admin/messages" style="color: white; margin-right: 20px; text-decoration: none; font-weight: bold;">
+    <i class="fas fa-envelope"></i> View Messages
+</a>
+        <a href="manage-products.jsp" style="color: #FF7F00; margin-right: 20px; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-edit"></i> Manage Products
+        </a>
+        <a href="LogoutServlet" style="color: #ff4444; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </div>
+</nav>
 
     <div class="card">
         <h2 style="color: #333; margin-top: 0;">Upload New Product</h2>

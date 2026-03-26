@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Contact Us | Bestpatch</title>
+    <title>Contact Us | OmkarIndustry</title>
 </head>
 <body>
     <nav style="overflow: visible;"> <div class="logo-container">
