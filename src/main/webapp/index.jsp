@@ -32,6 +32,51 @@
             color: #777; font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px;
         }
     </style>
+    
+    
+    
+    
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* This CSS ensures the bot floats in the corner instead of sitting in a line */
+        .ai-fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #FF5F15;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .ai-chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            background: white;
+            display: none; /* Keeps it hidden until clicked */
+            flex-direction: column;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 1001;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+    
+    
+    
+    
 </head>
 <body>
 
@@ -151,39 +196,147 @@
         </div>
     </section>
 
-    <footer style="background: #111; color: white; padding: 60px 10% 20px 10%;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
-           <div>
-           		<h3 style="color: #FF5F15;">📍 Omkar Industries</h3>
-                <a id="link-maps-address" 
-       href="https://www.google.com/maps/search/?api=1&query=Omkar+Industries+Kanbargi+Industrial+Area+Belagavi+590016" 
-       target="_blank" 
-       style="text-decoration: none; display: block;"> 
-                <p style="color: #888;">PLOT NO. S-1, Sy. N0. 638, <br>Kanbargi Industrial Area, <br>Belagavi-590016, India</p>
-            </div>
-            <div>
-                <h4 style="margin-bottom: 20px; color: #FF7F00;">Contact</h4>
-                <a id="link-phone" href="tel:+917619447817" style="color: #888; text-decoration: none;">
-            📞 +91 7619447817
-        </a>
-        <br>
-                <a href="mailto:info@omkarindustry.com" style="color: #888; text-decoration: none;">
-            📧 duraneakash@gmail.com
-        </a>
-            </div>
-            <div>
-                <h4 style="margin-bottom: 20px; color: #FF7F00;">Follow Us</h4>
-                <div style="display: flex; gap: 15px;">
-                    <a href="#" style="color: #888;"><i class="fab fa-facebook"></i></a>
-                    <a href="#" style="color: #888;"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" style="color: #888;"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+  <footer style="background: #111; color: white; padding: 60px 10% 40px 10%; font-family: sans-serif;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; align-items: start;">
+        
+        <div>
+            <h3 style="color: #FF5F15; margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 1.2rem;">📍</span> Omkar Industries
+            </h3>
+            <a id="link-maps-address" 
+               href="https://www.google.com/maps/search/?api=1&query=Omkar+Industries+Kanbargi+Industrial+Area+Belagavi" 
+               target="_blank" 
+               style="text-decoration: none; color: #888; line-height: 1.6; display: block;"> 
+                PLOT NO. S-1, Sy. N0. 638, <br>
+                Kanbargi Industrial Area, <br>
+                Belagavi-590016, India
+            </a>
         </div>
-        <div style="text-align: center; margin-top: 50px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.8rem; color: #555;">
-            &copy; 2026 Omkar Industry. All Rights Reserved.
-        </div>
-    </footer>
 
+        <div>
+            <h4 style="margin-bottom: 25px; color: #FF7F00; font-weight: 600;">Contact</h4>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <a id="link-phone" href="tel:+917619447817" style="color: #888; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #FF5F15;">📞</span> +91 7619447817
+                </a>
+                <a href="mailto:duraneakashkalidas@gmail.com" style="color: #888; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #FF5F15;">📧</span> duraneakashkalidas@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4 style="margin-bottom: 25px; color: #FF7F00; font-weight: 600;">Follow Us</h4>
+            <div style="display: flex; gap: 20px; font-size: 1.2rem;">
+                <a href="#" style="color: #888; text-decoration: none;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: #888; text-decoration: none;"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/omkarindustry.in?igsh=eHpxeGI5Z3J4eXdm" target="_blank" style="color: #888; text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; border-top: 1px solid #333; padding-top: 25px; font-size: 0.85rem; color: #555; letter-spacing: 0.5px;">
+        © 2026 **Omkar Industry**. All Rights Reserved.
+    </div>
+</footer>
+
+
+
+<div class="ai-fab" onclick="toggleChat()" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #FF5F15; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+    <i class="fas fa-robot"></i>
+</div>
+
+<div class="ai-chat-window" id="aiChatWindow" style="position: fixed; bottom: 100px; right: 30px; width: 350px; background: white; display: none; flex-direction: column; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); z-index: 1001; border: 1px solid #ddd; overflow: hidden;">
+    <div class="chat-header" style="background:#2c3e50; color:white; padding:15px; display:flex; justify-content:space-between; align-items: center;">
+        <span><i class="fas fa-robot"></i> Omkar AI Assistant</span>
+        <span onclick="toggleChat()" style="cursor:pointer; font-size: 24px; line-height: 20px;">&times;</span>
+    </div>
+    <div class="chat-body" style="padding:20px; display: flex; flex-direction: column; gap: 10px;">
+        
+        <label style="font-size: 0.8rem; color: #666; margin-bottom: -5px;">Select Damage Type:</label>
+        <select id="repairType" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd; background: white;">
+            <option value="Puncture">Puncture (requires Plug)</option>
+            <option value="Sidewall Cut">Sidewall/Shoulder Cut (Radial)</option>
+            <option value="Tube Leak">Tube Leak (Round/Oval Patch)</option>
+        </select>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="number" id="width" style="flex: 1; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" placeholder="Width (mm)">
+            <input type="number" id="length" style="flex: 1; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" placeholder="Length (mm)">
+        </div>
+        
+        <button onclick="getRecommendation()" style="width:100%; border:none; border-radius: 5px; padding: 12px; cursor: pointer; background: #FF5F15; color: white; font-weight: bold;">
+            Get Recommendation
+        </button>
+        
+        <div id="ai-result" style="margin-top:15px; font-size: 0.9rem; max-height: 200px; overflow-y: auto; border-top: 1px solid #eee; padding-top: 10px; color: #333;">
+            <p style="color: #999; text-align: center;">Enter details to start.</p>
+        </div>
+    </div>
+</div>
+    
+    <script>
+    function toggleChat() {
+        const chat = document.getElementById('aiChatWindow');
+        // Check current display and toggle
+        if (chat.style.display === "none" || chat.style.display === "") {
+            chat.style.display = "flex";
+        } else {
+            chat.style.display = "none";
+        }
+    }
+
+    function getRecommendation() {
+        const type = document.getElementById('repairType').value;
+        const w = document.getElementById('width').value;
+        const l = document.getElementById('length').value;
+        const resultDiv = document.getElementById('ai-result');
+
+        if(!w || !l) {
+            resultDiv.innerHTML = "<span style='color:red;'>Please enter dimensions!</span>";
+            return;
+        }
+
+        resultDiv.innerHTML = "<i class='fas fa-spinner fa-spin'></i> Identifying best patch...";
+
+        // Ensure the URL 'AIChatServlet' matches your @WebServlet mapping
+        fetch('./AIChatServlet', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: "width=" + encodeURIComponent(w) + "&length=" + encodeURIComponent(l) + "&tyreType=" + encodeURIComponent(type)
+        })
+        .then(res => {
+            if (!res.ok) throw new Error("Server error");
+            return res.json();
+        })
+      .then(data => {
+    if (data.error) {
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = "<span style='color:red;'>⚠️ Error: " + data.error + "</span>";
+    } 
+    else if (data.candidates && data.candidates[0].content) {
+        const recommendation = data.candidates[0].content.parts[0].text;
+        
+        // Highlight safety warnings
+        resultDiv.style.display = "block";
+        if (recommendation.toLowerCase().includes("scrap") || recommendation.toLowerCase().includes("replace")) {
+            resultDiv.style.background = "#fff5f5";
+            resultDiv.style.borderLeft = "5px solid #e74c3c";
+            resultDiv.innerHTML = "<strong style='color:#c0392b;'>Safety Warning:</strong><br>" + recommendation;
+        } else {
+            resultDiv.style.background = "#e8f4fd";
+            resultDiv.style.borderLeft = "5px solid #3498db";
+            resultDiv.innerHTML = "<strong>Recommended Patch:</strong><br>" + recommendation;
+        }
+    }
+})
+        .catch(err => {
+            resultDiv.innerHTML = "<span style='color:red;'>Connection failed. Check if Servlet is running.</span>";
+            console.error(err);
+        });
+    }
+</script>
 </body>
 </html>

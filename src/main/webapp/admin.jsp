@@ -57,8 +57,11 @@
             
             <label>Category</label>
             <select name="category" class="form-control">
-                <option>Radial Tyre Repairs</option>
-                <option>Bias Ply Tyre Repairs</option>
+                <option>Radial Tyres Repairs</option>
+                <option>Bias Ply Tyres Repairs</option>
+                <option>OTR Tyre Repairs For Bias Ply Tyres</option>
+                <option>Plug Patch For Radial And Bias Tyres</option>
+                <option>Tube Repairs</option>
                 <option>Chemicals</option>
             </select>
 

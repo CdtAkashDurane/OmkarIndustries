@@ -222,3 +222,76 @@ nav {
         font-size: 1.1rem;
     }
 }
+
+
+#ai-result {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #2c3e50; /* Industrial blue/grey */
+    font-family: 'Courier New', Courier, monospace; /* Technical look */
+    white-space: pre-wrap;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/* Floating AI Button */
+.ai-fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #FF5F15; /* Your orange theme */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+.ai-fab:hover { transform: scale(1.1); }
+
+/* The Chat Window (Hidden by default) */
+.ai-chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: none; /* Hidden */
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1001;
+    border: 1px solid #ddd;
+}
+
+.chat-header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-body { padding: 20px; color: #333; }
+
+.ai-input-small {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
