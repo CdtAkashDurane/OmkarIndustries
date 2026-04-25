@@ -73,7 +73,7 @@
     </span>
     <div>
     	 <a href="${pageContext.request.contextPath}/admin.jsp" style="color: white; margin-right: 20px; text-decoration: none;"><i class="fas fa-plus"></i> Add New</a>
-        <a href="${pageContext.request.contextPath}//manage-products.jsp" style="color: #FF7F00; text-decoration: none; margin-right: 20px;">
+        <a href="${pageContext.request.contextPath}/manage-products.jsp" style="color: #FF7F00; text-decoration: none; margin-right: 20px;">
             <i class="fas fa-edit"></i> Manage Products
         </a>
         
