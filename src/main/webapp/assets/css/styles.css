@@ -295,3 +295,27 @@ nav {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
+
+
+
+
+#ai-result {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+}
+
+.product-card, .ai-chat-window, .ai-fab {
+    /* Prevents flickering on mobile zoom/scroll */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* Ensure the header navigation doesn't jump during zoom */
+nav {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
